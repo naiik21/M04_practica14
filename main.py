@@ -2,6 +2,8 @@ import json
 
 from IntegrantB.book import book
 from IntegrantB.cat import cat
+from IntegrantA.car import car
+from IntegrantA.school import school
 
 
 books = [
@@ -28,9 +30,5 @@ data = {"books":books_list, "cats":cats_list}
 
 with open("jsonAPI/data.json", 'w') as file:
     json.dump(data, file)
-
-
-
-
 
 
