@@ -4,9 +4,10 @@ sus correspondientes getters y setters
 y una funcion que nos devuelve su info
 """
 class book:
-    def __init__(self, nom, autor, portada, pagines, categoria, editorial):
+    def __init__(self, nom, autor, id, portada, pagines, categoria, editorial):
         self.nom= nom
         self.autor = autor
+        self.id= id
         self.portada = portada
         self.pagines = pagines
         self.categoria = categoria
@@ -23,6 +24,12 @@ class book:
 
     def setautor(self, autor):
         self.autor = autor
+
+    def getid(self):
+        return self.id
+
+    def setid(self, id):
+        self.id = id
 
     def getportada(self):
         return self.portada
@@ -61,6 +68,7 @@ class book:
         return {
             "nom":self.nom,
             "autor": self.autor,
+            "id": self.id,
             "portada": self.portada,
             "pagines": self.pagines,
             "categoria": self.categoria,

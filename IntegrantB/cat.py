@@ -4,9 +4,10 @@ sus correspondientes getters y setters
 y una funcion que nos devuelve su info
 """
 class cat:
-    def __init__(self, nom, color, nomAmo, raza, mida, sexo):
+    def __init__(self, nom, color, id, nomAmo, raza, mida, sexo):
         self.nom= nom
         self.color = color
+        self.id=id
         self.nomAmo = nomAmo
         self.raza = raza
         self.mida = mida
@@ -23,6 +24,12 @@ class cat:
 
     def setcolor(self, color):
         self.color = color
+
+    def getid(self):
+        return self.id
+
+    def setid(self, id):
+        self.id = id
 
     def getnomAmo(self):
         return self.nomAmo
@@ -61,6 +68,7 @@ class cat:
         return {
             "nom":self.nom,
             "color": self.color,
+            "id": self.id,
             "nomAmo": self.nomAmo,
             "raza": self.raza,
             "mida": self.mida,
